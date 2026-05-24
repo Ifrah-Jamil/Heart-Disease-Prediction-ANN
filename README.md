@@ -1,9 +1,6 @@
 # Heart-Disease-Prediction-ANN
 Heart Disease Prediction using ANN 
 
-## 🌐 Live Demo
-👉 **[heart-disease-prediction-annmodel.streamlit.app](https://heart-disease-prediction-annmodel.streamlit.app/)**
-
 ---
 
 ## 📌 Project Overview
@@ -62,3 +59,52 @@ The dataset contains patient information such as age, blood pressure, cholestero
 - Applied `StandardScaler` to normalize input features
 
 **5️⃣ Model Building — ANN Architecture**
+Input (5 features)
+↓
+Dense(64, ReLU) → BatchNormalization → Dropout(0.3)
+↓
+Dense(32, ReLU) → BatchNormalization → Dropout(0.2)
+↓
+Dense(16, ReLU)
+↓
+Dense(1, Sigmoid) → Output Probability
+
+**6️⃣ Model Training**
+- Optimizer: Adam (lr=0.001)
+- Loss: Binary Cross-Entropy
+- Epochs: Up to 150
+- Batch Size: 32
+- Callbacks: EarlyStopping + ReduceLROnPlateau
+
+**7️⃣ Model Evaluation**
+- Models were evaluated using:
+  - Accuracy Score
+  - Classification Report
+  - Confusion Matrix
+  - Prediction Probability Distribution
+  - Training vs Validation Loss & Accuracy Curves
+
+**8️⃣ Model Saving**
+- Trained model saved using `pickle`
+- Scaler saved separately to ensure consistent preprocessing during prediction
+
+---
+
+## 📈 Model Performance
+The ANN model achieved reliable accuracy on the test dataset.
+Evaluation metrics such as classification report, confusion matrix, and probability distribution plots were used to analyze performance beyond accuracy.
+
+Advanced techniques like **BatchNormalization**, **Dropout**, **EarlyStopping**, and **ReduceLROnPlateau** were applied to improve generalization and prevent overfitting.
+
+---
+
+## 🌐 Web Application — Streamlit
+
+An interactive Streamlit web app was developed to:
+- Take user health inputs via sliders
+- Apply the same preprocessing steps used during training
+- Predict heart disease risk in real time
+- Display risk probability and health recommendation
+
+### 👉 Live Demo
+**[heart-disease-prediction-annmodel.streamlit.app](https://heart-disease-prediction-annmodel.streamlit.app/)**
