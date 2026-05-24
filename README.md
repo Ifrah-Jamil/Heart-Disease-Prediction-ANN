@@ -3,7 +3,7 @@ Heart Disease Prediction using ANN
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 This project focuses on predicting the presence of heart disease in patients using a **Deep Learning Artificial Neural Network (ANN)** built with **TensorFlow and Keras**.
 
 The aim is to build an end-to-end deep learning pipeline starting from data preprocessing to model deployment using a Streamlit web application.
@@ -17,7 +17,7 @@ The project demonstrates practical skills in:
 
 ---
 
-## 📂 Dataset
+##  Dataset
 - **Dataset Type:** Tabular medical dataset
 - **Target Variable:** Heart Disease Status
 - **Problem Type:** Binary Classification
@@ -29,7 +29,7 @@ The dataset contains patient information such as age, blood pressure, cholestero
 
 ---
 
-## 🛠️ Technologies & Libraries Used
+##  Technologies & Libraries Used
 - **Python**
 - **Pandas & NumPy** – Data handling
 - **Matplotlib & Seaborn** – Visualization
@@ -40,7 +40,7 @@ The dataset contains patient information such as age, blood pressure, cholestero
 
 ---
 
-## 🔄 Project Workflow
+##  Project Workflow
 
 **1️⃣ Data Exploration & Profiling**
 - Used `head()`, `info()`, `describe()`, and null checks
@@ -90,7 +90,7 @@ Dense(1, Sigmoid) → Output Probability
 
 ---
 
-## 📈 Model Performance
+##  Model Performance
 The ANN model achieved reliable accuracy on the test dataset.
 Evaluation metrics such as classification report, confusion matrix, and probability distribution plots were used to analyze performance beyond accuracy.
 
@@ -98,7 +98,7 @@ Advanced techniques like **BatchNormalization**, **Dropout**, **EarlyStopping**,
 
 ---
 
-## 🌐 Web Application — Streamlit
+##  Web Application — Streamlit
 
 An interactive Streamlit web app was developed to:
 - Take user health inputs via sliders
